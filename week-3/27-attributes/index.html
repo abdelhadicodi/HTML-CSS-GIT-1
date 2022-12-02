@@ -50,11 +50,11 @@
               </p>
               <p>
                 <label for="billing-postcode">Postcode</label>
-                <input type="text" name="billing-postcode" id="billing-postcode" />
+                <input type="text" name="billing-postcode" id="billing-postcode" required />
               </p>
               <p>
                 <label for="billing-city">City</label>
-                <input type="text" name="billing-city" id="billing-city" />
+                <input type="text" name="billing-city" id="billing-city" required/>
               </p>
             </fieldset>
             <fieldset>
@@ -73,15 +73,16 @@
                   type="text"
                   name="delivery-address-postcode"
                   id="delivery-address-postcode"
+                  required
                 />
               </p>
               <p>
                 <label for="delivery-address-city">City</label>
-                <input type="text" name="delivery-address-city" id="delivery-address-city" />
+                <input type="text" name="delivery-address-city" id="delivery-address-city" required/>
               </p>
               <p>
                 <label for="delivery-country">Country</label>
-                <input type="text" name="delivery-country" id="delivery-country" />
+                <input type="text" name="delivery-country" id="delivery-country"  value="United Kingdom"  readonly required/>
               </p>
               <fieldset>
                 <legend>Delivery Options</legend>
@@ -91,6 +92,8 @@
                     name="delivery-option"
                     id="delivery-option"
                     value="standard"
+                    checked
+                    disabled
                   />
                   Royal Mail
                 </label>
