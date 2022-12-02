@@ -26,6 +26,7 @@
               <a href="contact.html">Contact</a>
             </li>
           </ul>
+          
         </div>
         <form class="site-search" action="/search">
           <label for="search-input">
@@ -46,6 +47,7 @@
               d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
             ></path>
           </svg>
+         
           <button type="submit">Submit</button>
         </form>
       </div>
@@ -56,14 +58,30 @@
         <form method="GET" class="contact-form">
           <div class="contact-form__field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required />
           </div>
+          <div class="email">
+          <label for="email">Email</label>
+          <input name="email" id="email" required>
+        </div>
           <div class="contact-form__field">
-            <textarea
+            <label for="first-label">Message</label>
+            <textarea id="first-label"
               name="message"
               placeholder="Your message should not be longer than 200 words."
-            ></textarea>
+            required></textarea> 
+            <fieldset>
+              <legend>What branch are you intersted in?</legend>
+               <input type="radio" name="braches" id="london"><label for="london">London</label>
+               <br>
+               <input type="radio" name="braches" id="glasgow"><label for="glasgow">Glasgow</label>
+               <br>
+               <input type="radio" name="braches" id="Manchester"><label for="Manchester">Manchester</label>
+               
+            </fieldset>
+           
           </div>
+         
           <button type="submit">Send</button>
         </form>
       </main>
